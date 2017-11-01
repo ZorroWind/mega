@@ -1,0 +1,51 @@
+/* Generic layout. */
+
+.toolbar-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-left: 246px;
+   height: 40px;
+}
+
+.stencil-container {
+   <!--position: static;-->
+   position: absolute;
+   left: 0;
+   top: 0px;   /* toolbar height */
+   bottom: 0px;  /* statusbar height */
+}
+
+.inspector-container {
+   <!--position: static;-->
+   position: absolute;
+   top: 0px;   /* toolbar height */
+   right: 0;
+   bottom: 0px; /* statusbar height */
+}
+.navigator-container {
+   position: absolute;
+   height: 120px;   /* toolbar height */
+   width: 260px;
+}
+.paper-container {
+   position: absolute;
+   top: 0px;   /* toolbar height */
+   left: 0px;
+   right: 0px;
+   bottom: 0px; /* statusbar height */
+   overflow: hidden;
+}
+.paper-container .paper-scroller {
+   width: 100%;
+   height: 100%;
+}
+
+.statusbar-container {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   height: 20px;
+}

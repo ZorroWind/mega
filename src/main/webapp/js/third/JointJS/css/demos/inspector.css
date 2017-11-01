@@ -1,0 +1,108 @@
+.inspector {
+     <!--position: static;-->
+/*     position: absolute; */
+/*	   top: 0; */
+/*     width:0; */
+/*     height:, */
+/*     bottom: 0; */
+/*     right: 0; */
+/*     left: 0; */
+/*     overflow: auto; */
+    /*add*/
+    overflow-x : hidden;
+    width: 260px;
+}
+
+.inspector-container {
+   border: 0px solid #333;
+   /*border-top: 1px solid #4f4f4f;*/
+   border-top : 1px solid #C1C1C1;
+   color: #000000;
+   width: 260px;
+}
+
+.inspector input,
+.inspector textarea {
+    width: 200px;
+    text-shadow: 0 0px 0 #000;
+    color: #000000;
+    box-shadow: inset 0 0 0 0px rgba(0,0,0,.1),0 0 0 0px rgba(255,255,255,.1);
+    /*border: 1px solid #000;*/
+    border : 1px solid #C1C1C1;
+    background: transparent;
+    height: 20px;
+    line-height: 20px;
+}
+.inspector output {
+    float: left;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 5px 2px 10px;
+    color: #000000;
+}
+.inspector .group>.group-label {
+    padding: 4px 4px;
+    position: relative;
+    left: -10px;
+    margin-right: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    background: #f6fafd;
+    cursor: pointer;
+    color: #000000;
+    width:260px;
+    height:26px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.inspector .group {
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+.inspector .group.closed {
+	width:260px;
+    height:28px;
+}
+
+.inspector .group.closed>.group-label:before {
+    content: '〉';
+    width: 0;
+    height: 0;
+    display: inline;
+    margin-left: 2px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    left: -1px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid #fff;
+}
+.inspector .group>.group-label:before {
+    content: '﹀';
+    width: 0;
+    height: 0;
+    display: inline;
+    margin-left: 2px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    border-top: 0px solid rgba(0, 0, 0, 0.96);
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+/*图例中文提示*/
+.inspector label {
+    margin-top: 3px;
+}

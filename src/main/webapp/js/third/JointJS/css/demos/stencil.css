@@ -1,0 +1,137 @@
+.stencil-container {
+   /*border-top: 1px solid #4f4f4f;*/
+   border-top:none;
+   border-right: 1px solid lightgray;
+   background-color: #f6fafd;
+   color: #bcbcbc;
+   width: 260px;
+}
+.stencil-container > label {
+   display: block;
+   text-align: center;
+   background-color: #FFFFFF;   
+   font-size: 10px;
+   line-height: 20px;
+   height: 20px;
+   text-shadow: 0 -1px 0 #000;
+}
+.stencil-container > .btn-expand,
+.stencil-container > .btn-collapse {
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   background: none;
+   border: none;
+   outline: none;
+   color: #000000;
+   cursor: pointer;
+   width: 20px;
+   height: 16px;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   border: 1px solid #4f4f4f;
+}
+.stencil-container > .btn-collapse {
+   left: 25px;
+}
+
+.stencil {
+   position: static;
+   top: 0px;
+   background: #333;
+   width:260px;
+}
+
+.stencil > .content {
+   background: #f6fafd;
+}
+
+.stencil .search {
+   	background: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    text-shadow: 0 0px 0 #000;
+    color: #000000;
+    box-shadow: inset 0 0 0 0px rgba(0,0,0,.1),0 0 0 0px rgba(255,255,255,.1);
+    border: 1px solid #000;
+}
+
+.stencil .search:focus {
+    outline: none;
+}
+
+.stencil.searchable > .content {
+   top: 100px;
+}
+
+.stencil .group {
+   max-height: 700px;
+}
+
+.stencil .group>.group-label {
+    padding: 4px 4px;
+    position: relative;
+    left: -10px;
+    margin-right: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*border-top: 1px solid #C6C6C6;*/
+    border-top:none;
+    border-bottom: 1px solid #C6C6C6;
+    background: #f6fafd;
+    cursor: pointer;
+    color: #000000;
+}
+.stencil .group.closed>.group-label:before {
+    content: '〉';
+    width: 0;
+    height: 0;
+    display: inline;
+    margin-left: 2px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    left: -1px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid #fff;
+}
+.stencil .group>.group-label:before {
+    content: '﹀';
+    width: 0;
+    height: 0;
+    display: inline;
+    margin-left: 2px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    border-top: 0px solid rgba(0, 0, 0, 0.96);
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+.stencil .group .elements {
+   margin-left: -10px;
+   background: transparent;
+}
+
+/* Hide some nodes of elements in stencil. */
+.stencil .elements .element.basic.Image text,
+.stencil .elements .element.devs.Atomic .inPorts text,
+.stencil .elements .element.devs.Atomic .outPorts text,
+.stencil .elements .element.pn.Transition text {
+   display: none;
+}
+
+/* filter */
+.stencil .element.unmatched {
+    display: none;
+}
+.stencil .group.unmatched {
+    display: none;
+}
