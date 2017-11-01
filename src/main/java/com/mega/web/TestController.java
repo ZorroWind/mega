@@ -45,5 +45,8 @@ public class TestController {
         TestController.Test test=controller.new Test();
         test.setName("sda");
         test.setAge(54);
+		int kk=5;
+        System.out.println(156651);
+
     }
 }
